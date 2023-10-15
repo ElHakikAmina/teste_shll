@@ -57,7 +57,7 @@ ssize_t get_input(info_t *info)
 	ssize_t r = 0;
 	char **buf_p = &(info->arg), *p;
 
-	_putchar(BUF_FLUSH);
+	_putchar(BUF_FLUSH2);
 	r = input_buf(info, &buf, &len);
 	if (r == -1) /* EOF */
 		return (-1);
@@ -166,5 +166,5 @@ void sigintHandler(__attribute__((unused))int sig_num)
 {
 	_puts("\n");
 	_puts("$ ");
-	_putchar(BUF_FLUSH);
+	_putchar(BUF_FLUSH2);
 }
