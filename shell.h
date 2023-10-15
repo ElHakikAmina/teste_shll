@@ -37,7 +37,7 @@
 
 /* change HIST_FILE to HIST_FILE_SHLL */
 #define HIST_FILE_SHLL	".simple_shell_history"
-#define HIST_MAX	4096
+#define HIST_MAX_SHLL	4096
 
 extern char **environ;
 
