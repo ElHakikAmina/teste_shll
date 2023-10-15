@@ -139,7 +139,7 @@ int _putsfdfnc(char *string, int fd);
 
 /* toem_string.c */
 int _strlenfnc(char *);
-int _strcmp(char *, char *);
+int _strcmpfnc(char *, char *);
 char *starts_with(const char *, const char *);
 char *_strcat(char *, char *);
 
