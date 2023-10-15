@@ -22,8 +22,8 @@
 /* change CMD_NORM to CMD_NORM_CHAINING */
 #define CMD_NORM_CHAINING	0
 #define CMD_OR_CHAINING		1
-#define CMD_AND		2
-#define CMD_CHAIN	3
+#define CMD_AND_CHAINING	2
+#define CMD_CHAIN_CHAINING	3
 
 /* for convert_number() */
 #define CONVERT_LOWERCASE	1
