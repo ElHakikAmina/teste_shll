@@ -101,13 +101,13 @@ list_t *nodestarts(list_t *node, char *prefix, char c)
 }
 
 /**
- * node_index - gets the index of a node
+ * node_indexSHLL - gets the index of a node
  * @head: pointer to list head
  * @node: pointer to the node
  *
  * Return: index of node or -1
  */
-ssize_t node_index(list_t *head, list_t *node)
+ssize_t node_indexSHLL(list_t *head, list_t *node)
 {
 	size_t i = 0;
 
