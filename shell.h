@@ -14,6 +14,7 @@
 
 /* for read/write buffers */
 #define READING_BUFFER_SIZE 1024
+/* change WRITE_BUF_SIZE to WRITE_BUFFER_SIZE*/
 #define WRITE_BUF_SIZE2 1024
 #define BUFFER_FLSH -1
 
