@@ -168,7 +168,7 @@ int bufferfree(void **);
 
 /* toem_atoi.c */
 int intrctv(info_t *);
-int is_delim(char, char *);
+int delim(char, char *);
 int _isalpha(int);
 int _atoi(char *);
 
