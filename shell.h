@@ -155,8 +155,8 @@ char *_strncatfnc(char *, char *, int);
 char *_strchrfnc(char *, char);
 
 /* toem_tokenizer.c */
-char **strtow(char *, char *);
-char **strtow2(char *, char);
+char **strtowSHLL(char *, char *);
+char **strtowSHLL2(char *, char);
 
 /* toem_realloc.c */
 char *_memset(char *, char, unsigned int);

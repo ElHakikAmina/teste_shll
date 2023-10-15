@@ -24,7 +24,7 @@ void set_info(info_t *info, char **av)
 	info->filename = av[0];
 	if (info->arg)
 	{
-		info->argv = strtow(info->arg, " \t");
+		info->argv = strtowSHLL(info->arg, " \t");
 		if (!info->argv)
 		{
 
