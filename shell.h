@@ -26,8 +26,9 @@
 #define CMD_CHAIN_CHAINING	3
 
 /* for convert_number() */
-#define CONVERT_LOWERCASE	1
-#define CONVERT_UNSIGNED	2
+/* change CONVERT to CNVRT */
+#define CNVRT_LOWERCASE	1
+#define CNVRT_UNSIGNED	2
 
 /* 1 if using system getline() */
 #define USE_GETLINE 0
