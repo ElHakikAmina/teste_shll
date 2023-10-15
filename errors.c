@@ -1,12 +1,12 @@
 #include "shell.h"
 
 /**
- *_eputsfnc - prints an input string
+ *_eputsfncnc - prints an input string
  * @str: the string to be printed
  *
  * Return: Nothing
  */
-void _eputsfnc(char *str)
+void _eputsfncnc(char *str)
 {
 	int i = 0;
 
