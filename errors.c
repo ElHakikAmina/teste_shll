@@ -14,19 +14,19 @@ void _eputsfnc(char *str)
 		return;
 	while (str[i] != '\0')
 	{
-		_eputchar(str[i]);
+		_eputcharfnc(str[i]);
 		i++;
 	}
 }
 
 /**
- * _eputchar - writes the character c to stderr
+ * _eputcharfnc - writes the character c to stderr
  * @c: The character to print
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-int _eputchar(char c)
+int _eputcharfnc(char c)
 {
 	static int i;
 	static char buf[WRITE_BUFFER_SIZE];

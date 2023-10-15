@@ -29,8 +29,8 @@ int main(int ac, char **av)
 				_eputsfnc(av[0]);
 				_eputsfnc(": 0: Can't open ");
 				_eputsfnc(av[1]);
-				_eputchar('\n');
-				_eputchar(BUFFER_FLSH);
+				_eputcharfnc('\n');
+				_eputcharfnc(BUFFER_FLSH);
 				exit(127);
 			}
 			return (EXIT_FAILURE);
