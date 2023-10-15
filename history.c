@@ -116,7 +116,7 @@ int build_history_list(info_t *info, char *buf, int linecount)
 
 	if (info->history)
 		node = info->history;
-	add_node_end(&node, buf, linecount);
+	addingnode_end(&node, buf, linecount);
 
 	if (!info->history)
 		info->history = node;
