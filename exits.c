@@ -58,12 +58,12 @@ char *_strncatfnc(char *dest, char *src, int n)
 }
 
 /**
- **_strchr - locates a character in a string
+ **_strchrfnc - locates a character in a string
  *@s: the string to be parsed
  *@c: the character to look for
  *Return: (s) a pointer to the memory area s
  */
-char *_strchr(char *s, char c)
+char *_strchrfnc(char *s, char c)
 {
 	do {
 		if (*s == c)

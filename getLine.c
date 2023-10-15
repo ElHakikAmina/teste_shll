@@ -34,7 +34,7 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 			info->linecount_flag = 1;
 			remove_comments(*buf);
 			build_history_list(info, *buf, info->hstrycount++);
-			/* if (_strchr(*buf, ';')) is this a command chain? */
+			/* if (_strchrfnc(*buf, ';')) is this a command chain? */
 			{
 				*len = r;
 				info->cmd_buffer = buf;
@@ -135,7 +135,7 @@ int _getline(info_t *info, char **ptr, size_t *length)
 	if (r == -1 || (r == 0 && len == 0))
 		return (-1);
 
-	c = _strchr(buf + i, '\n');
+	c = _strchrfnc(buf + i, '\n');
 	k = c ? 1 + (unsigned int)(c - buf) : len;
 	new_p = _realloc(p, s, s ? s + k : k + 1);
 	if (!new_p) /* MALLOC FAILURE! */
