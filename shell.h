@@ -134,7 +134,7 @@ int loophshfunction(char **);
 /* toem_errors.c */
 void _eputsfnc(char *);
 int _eputcharfnc(char);
-int _putfd(char c, int fd);
+int _putfdfnc(char c, int fd);
 int _putsfd(char *string, int fd);
 
 /* toem_string.c */

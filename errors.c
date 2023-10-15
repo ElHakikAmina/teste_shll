@@ -42,14 +42,14 @@ int _eputcharfnc(char c)
 }
 
 /**
- * _putfd - writes the character c to given fd
+ * _putfdfnc - writes the character c to given fd
  * @c: The character to print
  * @fd: The filedescriptor to write to
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-int _putfd(char c, int fd)
+int _putfdfnc(char c, int fd)
 {
 	static int i;
 	static char buf[WRITE_BUFFER_SIZE];
@@ -79,7 +79,7 @@ int _putsfd(char *str, int fd)
 		return (0);
 	while (*str)
 	{
-		i += _putfd(*str++, fd);
+		i += _putfdfnc(*str++, fd);
 	}
 	return (i);
 }

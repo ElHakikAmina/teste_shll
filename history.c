@@ -46,9 +46,9 @@ int write_history(info_t *info)
 	for (node = info->history; node; node = node->next)
 	{
 		_putsfd(node->string, fd);
-		_putfd('\n', fd);
+		_putfdfnc('\n', fd);
 	}
-	_putfd(BUFFER_FLSH, fd);
+	_putfdfnc(BUFFER_FLSH, fd);
 	close(fd);
 	return (1);
 }
