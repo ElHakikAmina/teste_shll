@@ -66,7 +66,7 @@ void free_info(info_t *info, int all)
 			free_list(&(info->alias));
 		filefree(info->environ);
 			info->environ = NULL;
-		bfree((void **)info->cmd_buffer);
+		bufferfree((void **)info->cmd_buffer);
 		if (info->readfd > 2)
 			close(info->readfd);
 		_putcharfnc(BUFFER_FLSH);

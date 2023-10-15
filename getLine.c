@@ -15,7 +15,7 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 
 	if (!*len) /* if nothing left in the buffer, fill it */
 	{
-		/*bfree((void **)info->cmd_buffer);*/
+		/*bufferfree((void **)info->cmd_buffer);*/
 		free(*buf);
 		*buf = NULL;
 		signal(SIGINT, sigintHandler);
