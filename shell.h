@@ -31,7 +31,8 @@
 #define CNVRT_UNSIGNED	2
 
 /* 1 if using system getline() */
-#define USE_GETLINE 0
+/* change USE_GETLINE to USING_GETLINE  */
+#define USING_GETLINE 0
 #define USE_STRTOK 0
 
 #define HIST_FILE	".simple_shell_history"
