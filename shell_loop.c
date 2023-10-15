@@ -104,13 +104,13 @@ void find_comandd(info_t *info)
 	if (path)
 	{
 		info->path = path;
-		fork_cmd(info);
+		fork_comand(info);
 	}
 	else
 	{
 		if ((interactive(info) || _getenv(info, "PATH=")
 			|| info->argv[0][0] == '/') && is_cmd(info, info->argv[0]))
-			fork_cmd(info);
+			fork_comand(info);
 		else if (*(info->arg) != '\n')
 		{
 			info->status = 127;
@@ -120,12 +120,12 @@ void find_comandd(info_t *info)
 }
 
 /**
- * fork_cmd - forks a an exec thread to run cmd
+ * fork_comand - forks a an exec thread to run cmd
  * @info: the parameter & return info struct
  *
  * Return: void
  */
-void fork_cmd(info_t *info)
+void fork_comand(info_t *info)
 {
 	pid_t child_pid;
 
