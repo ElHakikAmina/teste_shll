@@ -31,13 +31,13 @@ char *_strncpyfnc(char *dest, char *src, int n)
 }
 
 /**
- **_strncat - concatenates two strings
+ **_strncatfnc - concatenates two strings
  *@dest: the first string
  *@src: the second string
  *@n: the amount of bytes to be maximally used
  *Return: the concatenated string
  */
-char *_strncat(char *dest, char *src, int n)
+char *_strncatfnc(char *dest, char *src, int n)
 {
 	int i, j;
 	char *s = dest;

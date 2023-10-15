@@ -151,7 +151,7 @@ int _putcharfnc(char);
 
 /* toem_exits.c */
 char *_strncpyfnc(char *, char *, int);
-char *_strncat(char *, char *, int);
+char *_strncatfnc(char *, char *, int);
 char *_strchr(char *, char);
 
 /* toem_tokenizer.c */
