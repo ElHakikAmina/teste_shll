@@ -144,7 +144,7 @@ char *starts_with(const char *, const char *);
 char *_strcatfnc(char *, char *);
 
 /* toem_string1.c */
-char *_strcpy(char *, char *);
+char *_strcpyfnc(char *, char *);
 char *_strdup(const char *);
 void _puts(char *);
 int _putchar(char);

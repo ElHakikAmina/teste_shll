@@ -18,7 +18,7 @@ char *get_hstry_f(info_t *info)
 	if (!buf)
 		return (NULL);
 	buf[0] = 0;
-	_strcpy(buf, dir);
+	_strcpyfnc(buf, dir);
 	_strcatfnc(buf, "/");
 	_strcatfnc(buf, HIST_FILE_SHLL);
 	return (buf);
