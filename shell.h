@@ -33,7 +33,7 @@
 /* 1 if using system getline() */
 /* change USE_GETLINE to USING_GETLINE  */
 #define USING_GETLINE 0
-#define USE_STRTOK 0
+/* #define USE_STRTOK 0 */
 
 #define HIST_FILE	".simple_shell_history"
 #define HIST_MAX	4096
