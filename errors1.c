@@ -37,13 +37,13 @@ int _erratoi(char *s)
  */
 void print_error(info_t *info, char *estr)
 {
-	_eputsfncnc(info->filename);
-	_eputsfncnc(": ");
+	_eputsfnc(info->filename);
+	_eputsfnc(": ");
 	print_d(info->line_count, STDERR_FILENO);
-	_eputsfncnc(": ");
-	_eputsfncnc(info->argv[0]);
-	_eputsfncnc(": ");
-	_eputsfncnc(estr);
+	_eputsfnc(": ");
+	_eputsfnc(info->argv[0]);
+	_eputsfnc(": ");
+	_eputsfnc(estr);
 }
 
 /**
