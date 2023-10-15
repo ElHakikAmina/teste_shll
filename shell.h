@@ -75,7 +75,7 @@ typedef struct liststr
  *@cmd_buffer: address of pointer to cmd_buffer, on if chaining
  *@cmd_buffer_type: CMD_type ||, &&, ;
  *@readfd: the fd from which to read line input
- *@histcount: the history line number count
+ *@hstrycount: the history line number count
  */
 typedef struct passinfo
 {
@@ -97,7 +97,8 @@ typedef struct passinfo
 	char **cmd_buffer; /* pointer to cmd ; chain buffer, for memory mangement */
 	int cmd_buffer_type; /* CMD_type ||, &&, ; */
 	int readfd;
-	int histcount;
+	/* hstrycount par hstrycount */
+	int hstrycount;
 } info_t;
 
 #define INFO_INIT \
