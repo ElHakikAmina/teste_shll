@@ -59,7 +59,7 @@ int find_builtin(info_t *info)
 		{"exit", _myexitfnc},
 		{"env", _myenv},
 		{"help", _myhelpfnc},
-		{"history", _myhistory},
+		{"history", _myhistoryfnc},
 		{"setenv", _mysetenv},
 		{"unsetenv", _myunsetenv},
 		{"cd", _mycdfnc},

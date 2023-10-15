@@ -185,7 +185,7 @@ int _mycdfnc(info_t *);
 int _myhelpfnc(info_t *);
 
 /* toem_builtin1.c */
-int _myhistory(info_t *);
+int _myhistoryfnc(info_t *);
 int _myalias(info_t *);
 
 /*toem_getline.c */
