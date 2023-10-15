@@ -72,8 +72,8 @@ typedef struct liststr
  *@alias: the alias node
  *@env_changed: on if environ was changed
  *@status: the return status of the last exec'd command
- *@cmd_buf: address of pointer to cmd_buf, on if chaining
- *@cmd_buf_type: CMD_type ||, &&, ;
+ *@cmd_buffer: address of pointer to cmd_buffer, on if chaining
+ *@cmd_buffer_type: CMD_type ||, &&, ;
  *@readfd: the fd from which to read line input
  *@histcount: the history line number count
  */
@@ -93,9 +93,9 @@ typedef struct passinfo
 	char **environ;
 	int env_changed;
 	int status;
-
-	char **cmd_buf; /* pointer to cmd ; chain buffer, for memory mangement */
-	int cmd_buf_type; /* CMD_type ||, &&, ; */
+/* cmd_buffer to cmd_bufferfer */
+	char **cmd_buffer; /* pointer to cmd ; chain buffer, for memory mangement */
+	int cmd_buffer_type; /* CMD_type ||, &&, ; */
 	int readfd;
 	int histcount;
 } info_t;

@@ -15,7 +15,7 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 
 	if (!*len) /* if nothing left in the buffer, fill it */
 	{
-		/*bfree((void **)info->cmd_buf);*/
+		/*bfree((void **)info->cmd_buffer);*/
 		free(*buf);
 		*buf = NULL;
 		signal(SIGINT, sigintHandler);
@@ -37,7 +37,7 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 			/* if (_strchr(*buf, ';')) is this a command chain? */
 			{
 				*len = r;
-				info->cmd_buf = buf;
+				info->cmd_buffer = buf;
 			}
 		}
 	}
@@ -78,7 +78,7 @@ ssize_t get_input(info_t *info)
 		if (i >= len) /* reached end of buffer? */
 		{
 			i = len = 0; /* reset position and length */
-			info->cmd_buf_type = CMD_NORM_CHAINING;
+			info->cmd_buffer_type = CMD_NORM_CHAINING;
 		}
 
 		*buf_p = p; /* pass back pointer to current command position */
