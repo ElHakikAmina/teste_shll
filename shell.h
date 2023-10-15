@@ -19,7 +19,8 @@
 #define BUFFER_FLSH -1
 
 /* for command chaining */
-#define CMD_NORM	0
+/* change CMD_NORM to CMD_NORM_CHAINING */
+#define CMD_NORM_CHAINING	0
 #define CMD_OR		1
 #define CMD_AND		2
 #define CMD_CHAIN	3
