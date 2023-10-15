@@ -68,8 +68,8 @@ size_t print_list(const list_t *h)
 	while (h)
 	{
 		_putsfnc(convert_number(h->num, 10, 0));
-		_putchar(':');
-		_putchar(' ');
+		_putcharfnc(':');
+		_putcharfnc(' ');
 		_putsfnc(h->string ? h->string : "(nil)");
 		_putsfnc("\n");
 		h = h->next;

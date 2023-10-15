@@ -59,19 +59,19 @@ void _putsfnc(char *str)
 		return;
 	while (str[i] != '\0')
 	{
-		_putchar(str[i]);
+		_putcharfnc(str[i]);
 		i++;
 	}
 }
 
 /**
- * _putchar - writes the character c to stdout
+ * _putcharfnc - writes the character c to stdout
  * @c: The character to print
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-int _putchar(char c)
+int _putcharfnc(char c)
 {
 	static int i;
 	static char buf[WRITE_BUFFER_SIZE];

@@ -55,16 +55,16 @@ void print_error(info_t *info, char *estr)
  */
 int print_d(int input, int fd)
 {
-	int (*__putchar)(char) = _putchar;
+	int (*__putcharfnc)(char) = _putcharfnc;
 	int i, count = 0;
 	unsigned int _abs_, current;
 
 	if (fd == STDERR_FILENO)
-		__putchar = _eputcharfnc;
+		__putcharfnc = _eputcharfnc;
 	if (input < 0)
 	{
 		_abs_ = -input;
-		__putchar('-');
+		__putcharfnc('-');
 		count++;
 	}
 	else
@@ -74,12 +74,12 @@ int print_d(int input, int fd)
 	{
 		if (_abs_ / i)
 		{
-			__putchar('0' + current / i);
+			__putcharfnc('0' + current / i);
 			count++;
 		}
 		current %= i;
 	}
-	__putchar('0' + current);
+	__putcharfnc('0' + current);
 	count++;
 
 	return (count);

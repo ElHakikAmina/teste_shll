@@ -71,8 +71,8 @@ int print_alias(list_t *node)
 	{
 		p = _strchr(node->string, '=');
 		for (a = node->string; a <= p; a++)
-			_putchar(*a);
-		_putchar('\'');
+			_putcharfnc(*a);
+		_putcharfnc('\'');
 		_putsfnc(p + 1);
 		_putsfnc("'\n");
 		return (0);
