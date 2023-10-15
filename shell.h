@@ -169,7 +169,7 @@ int bufferfree(void **);
 /* toem_atoi.c */
 int intrctv(info_t *);
 int delim(char, char *);
-int _isalpha(int);
+int _isalphafnc(int);
 int _atoi(char *);
 
 /* toem_errors1.c */
