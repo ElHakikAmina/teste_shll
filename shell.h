@@ -145,7 +145,7 @@ char *_strcatfnc(char *, char *);
 
 /* toem_string1.c */
 char *_strcpyfnc(char *, char *);
-char *_strdup(const char *);
+char *_strdupfnc(const char *);
 void _puts(char *);
 int _putchar(char);
 
