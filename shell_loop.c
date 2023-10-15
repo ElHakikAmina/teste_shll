@@ -109,7 +109,7 @@ void find_comandd(info_t *info)
 	else
 	{
 		if ((interactive(info) || _getenv(info, "PATH=")
-			|| info->argv[0][0] == '/') && is_cmd(info, info->argv[0]))
+			|| info->argv[0][0] == '/') && is_comand(info, info->argv[0]))
 			fork_comand(info);
 		else if (*(info->arg) != '\n')
 		{
