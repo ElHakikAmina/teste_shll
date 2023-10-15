@@ -103,7 +103,7 @@ ssize_t read_buf(info_t *info, char *buf, size_t *i)
 
 	if (*i)
 		return (0);
-	r = read(info->readfd, buf, READ_BUF_SIZE2);
+	r = read(info->readfd, buf, READING_BUFFER_SIZE);
 	if (r >= 0)
 		*i = r;
 	return (r);
@@ -119,7 +119,7 @@ ssize_t read_buf(info_t *info, char *buf, size_t *i)
  */
 int _getline(info_t *info, char **ptr, size_t *length)
 {
-	static char buf[READ_BUF_SIZE2];
+	static char buf[READING_BUFFER_SIZE];
 	static size_t i, len;
 	size_t k;
 	ssize_t r = 0, s = 0;
