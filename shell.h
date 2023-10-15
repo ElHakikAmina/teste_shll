@@ -65,7 +65,7 @@ typedef struct liststr
  *@line_count: the error count
  *@err_num: the error code for exit()s
  *@linecount_flag: if on count this line of input
- *@fname: the program filename
+ *@filename: the program filename
  *@env: linked list local copy of environ
  *@environ: custom modified copy of environ from LL env
  *@history: the history node
@@ -86,7 +86,7 @@ typedef struct passinfo
 	unsigned int line_count;
 	int err_num;
 	int linecount_flag;
-	char *fname;
+	char *filename;
 	list_t *env;
 	list_t *history;
 	list_t *alias;
