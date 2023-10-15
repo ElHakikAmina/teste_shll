@@ -11,7 +11,7 @@ char *get_hstry_f(info_t *info)
 {
 	char *buf, *dir;
 
-	dir = _getenv(info, "HOME=");
+	dir = _getenvfnc(info, "HOME=");
 	if (!dir)
 		return (NULL);
 	buf = malloc(sizeof(char) * (_strlenfnc(dir) + _strlenfnc(HIST_FILE_SHLL) + 2));
