@@ -62,7 +62,7 @@ int find_builtin(info_t *info)
 		{"history", _myhistory},
 		{"setenv", _mysetenv},
 		{"unsetenv", _myunsetenv},
-		{"cd", _mycd},
+		{"cd", _mycdfnc},
 		{"alias", _myalias},
 		{NULL, NULL}
 	};
