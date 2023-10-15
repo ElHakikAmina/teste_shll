@@ -158,10 +158,10 @@ char *_strchrfnc(char *, char);
 char **strtowSHLL(char *, char *);
 char **strtowSHLL2(char *, char);
 
-/* toem_realloc.c */
+/* toem_reallocfnc.c */
 char *_memsetfnc(char *, char, unsigned int);
 void filefree(char **);
-void *_realloc(void *, unsigned int, unsigned int);
+void *_reallocfnc(void *, unsigned int, unsigned int);
 
 /* toem_memory.c */
 int bufferfree(void **);
