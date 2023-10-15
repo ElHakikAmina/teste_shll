@@ -1,13 +1,13 @@
 #include "shell.h"
 
 /**
- * get_history_file - gets the history file
+ * get_hstry_f - gets the history file
  * @info: parameter struct
  *
  * Return: allocated string containg history file
  */
 
-char *get_history_file(info_t *info)
+char *get_hstry_f(info_t *info)
 {
 	char *buf, *dir;
 
@@ -33,7 +33,7 @@ char *get_history_file(info_t *info)
 int write_history(info_t *info)
 {
 	ssize_t fd;
-	char *filename = get_history_file(info);
+	char *filename = get_hstry_f(info);
 	list_t *node = NULL;
 
 	if (!filename)
@@ -64,7 +64,7 @@ int read_history(info_t *info)
 	int i, last = 0, linecount = 0;
 	ssize_t fd, rdlen, fsize = 0;
 	struct stat st;
-	char *buf = NULL, *filename = get_history_file(info);
+	char *buf = NULL, *filename = get_hstry_f(info);
 
 	if (!filename)
 		return (0);
