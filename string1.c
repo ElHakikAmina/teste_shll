@@ -46,12 +46,12 @@ char *_strdupfnc(const char *str)
 }
 
 /**
- *_puts - prints an input string
+ *_putsfnc - prints an input string
  *@str: the string to be printed
  *
  * Return: Nothing
  */
-void _puts(char *str)
+void _putsfnc(char *str)
 {
 	int i = 0;
 

@@ -65,13 +65,13 @@ int _putfdfnc(char c, int fd)
 }
 
 /**
- *_putsfdfnc - prints an input string
+ *_putsfncfdfnc - prints an input string
  * @str: the string to be printed
  * @fd: the filedescriptor to write to
  *
  * Return: the number of chars put
  */
-int _putsfdfnc(char *str, int fd)
+int _putsfncfdfnc(char *str, int fd)
 {
 	int i = 0;
 
