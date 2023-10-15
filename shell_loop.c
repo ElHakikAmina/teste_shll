@@ -15,7 +15,7 @@ int hsh(info_t *info, char **av)
 	while (r != -1 && builtin_ret != -2)
 	{
 		clear_info(info);
-		if (interactive(info))
+		if (intrctv(info))
 			_putsfnc("$ ");
 		_eputcharfnc(BUFFER_FLSH);
 		r = get_input(info);
@@ -26,13 +26,13 @@ int hsh(info_t *info, char **av)
 			if (builtin_ret == -1)
 				find_comandd(info);
 		}
-		else if (interactive(info))
+		else if (intrctv(info))
 			_putcharfnc('\n');
 		free_info(info, 0);
 	}
 	write_history(info);
 	free_info(info, 1);
-	if (!interactive(info) && info->status)
+	if (!intrctv(info) && info->status)
 		exit(info->status);
 	if (builtin_ret == -2)
 	{
@@ -108,7 +108,7 @@ void find_comandd(info_t *info)
 	}
 	else
 	{
-		if ((interactive(info) || _getenv(info, "PATH=")
+		if ((intrctv(info) || _getenv(info, "PATH=")
 			|| info->argv[0][0] == '/') && is_comand(info, info->argv[0]))
 			fork_comand(info);
 		else if (*(info->arg) != '\n')
