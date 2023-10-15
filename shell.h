@@ -150,7 +150,7 @@ void _putsfnc(char *);
 int _putcharfnc(char);
 
 /* toem_exits.c */
-char *_strncpy(char *, char *, int);
+char *_strncpyfnc(char *, char *, int);
 char *_strncat(char *, char *, int);
 char *_strchr(char *, char);
 
