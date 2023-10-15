@@ -31,8 +31,8 @@
 #define CNVRT_UNSIGNED	2
 
 /* 1 if using system getline() */
-/* change USE_GETLINE to USING_GETLINE  */
-#define USING_GETLINE 0
+/* change USE_getlinefnc to USING_getlinefnc  */
+#define USING_getlinefnc 0
 /* #define USE_STRTOK 0 */
 
 /* change HIST_FILE to HIST_FILE_SHLL */
@@ -188,9 +188,9 @@ int _myhelpfnc(info_t *);
 int _myhistoryfnc(info_t *);
 int _myaliasfnc(info_t *);
 
-/*toem_getline.c */
+/*toem_getlinefnc.c */
 ssize_t get_input(info_t *);
-int _getline(info_t *, char **, size_t *);
+int _getlinefnc(info_t *, char **, size_t *);
 void sigintHandler(int);
 
 /* toem_getinfo.c */

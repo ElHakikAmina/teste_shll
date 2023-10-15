@@ -19,10 +19,10 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 		free(*buf);
 		*buf = NULL;
 		signal(SIGINT, sigintHandler);
-#if USING_GETLINE
+#if USING_getlinefnc
 		r = getline(buf, &len_p, stdin);
 #else
-		r = _getline(info, buf, &len_p);
+		r = _getlinefnc(info, buf, &len_p);
 #endif
 		if (r > 0)
 		{
@@ -85,8 +85,8 @@ ssize_t get_input(info_t *info)
 		return (_strlenfnc(p)); /* return length of current command */
 	}
 
-	*buf_p = buf; /* else not a chain, pass back buffer from _getline() */
-	return (r); /* return length of buffer from _getline() */
+	*buf_p = buf; /* else not a chain, pass back buffer from _getlinefnc() */
+	return (r); /* return length of buffer from _getlinefnc() */
 }
 
 /**
@@ -110,14 +110,14 @@ ssize_t read_buf(info_t *info, char *buf, size_t *i)
 }
 
 /**
- * _getline - gets the next line of input from STDIN
+ * _getlinefnc - gets the next line of input from STDIN
  * @info: parameter struct
  * @ptr: address of pointer to buffer, preallocated or NULL
  * @length: size of preallocated ptr buffer if not NULL
  *
  * Return: s
  */
-int _getline(info_t *info, char **ptr, size_t *length)
+int _getlinefnc(info_t *info, char **ptr, size_t *length)
 {
 	static char buf[READING_BUFFER_SIZE];
 	static size_t i, len;
