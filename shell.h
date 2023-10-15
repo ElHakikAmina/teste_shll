@@ -159,7 +159,7 @@ char **strtowSHLL(char *, char *);
 char **strtowSHLL2(char *, char);
 
 /* toem_realloc.c */
-char *_memset(char *, char, unsigned int);
+char *_memsetfnc(char *, char, unsigned int);
 void filefree(char **);
 void *_realloc(void *, unsigned int, unsigned int);
 
