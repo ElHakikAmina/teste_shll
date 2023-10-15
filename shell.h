@@ -166,11 +166,11 @@ void *_realloc(void *, unsigned int, unsigned int);
 /* toem_memory.c */
 int bufferfree(void **);
 
-/* toem_atoi.c */
+/* toem_atoifnc.c */
 int intrctv(info_t *);
 int delim(char, char *);
 int _isalphafnc(int);
-int _atoi(char *);
+int _atoifnc(char *);
 
 /* toem_errors1.c */
 int _erratoi(char *);

@@ -40,12 +40,12 @@ int _isalphafnc(int c)
 }
 
 /**
- *_atoi - converts a string to an integer
+ *_atoifnc - converts a string to an integer
  *@s: the string to be converted
  *Return: 0 if no numbers in string, converted number otherwise
  */
 
-int _atoi(char *s)
+int _atoifnc(char *s)
 {
 	int i, sign = 1, flag = 0, output;
 	unsigned int result = 0;
