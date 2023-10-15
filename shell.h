@@ -182,7 +182,7 @@ void remove_comments(char *);
 /* toem_builtin.c */
 int _myexitfnc(info_t *);
 int _mycdfnc(info_t *);
-int _myhelp(info_t *);
+int _myhelpfnc(info_t *);
 
 /* toem_builtin1.c */
 int _myhistory(info_t *);
