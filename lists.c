@@ -113,7 +113,7 @@ int delete_node_at_index(list_t **head, unsigned int index)
 	{
 		node = *head;
 		*head = (*head)->next;
-		free(node->str);
+		free(node->string);
 		free(node);
 		return (1);
 	}
@@ -123,7 +123,7 @@ int delete_node_at_index(list_t **head, unsigned int index)
 		if (i == index)
 		{
 			prev_node->next = node->next;
-			free(node->str);
+			free(node->string);
 			free(node);
 			return (1);
 		}
@@ -151,7 +151,7 @@ void free_list(list_t **head_ptr)
 	while (node)
 	{
 		next_node = node->next;
-		free(node->str);
+		free(node->string);
 		free(node);
 		node = next_node;
 	}
