@@ -45,13 +45,13 @@ extern char **environ;
 /**
  * struct liststr - singly linked list
  * @num: the number field
- * @str: a string
+ * @string: a string
  * @next: points to the next node
  */
 typedef struct liststr
 {
 	int num;
-	char *str;
+	char *string;
 	struct liststr *next;
 } list_t;
 
@@ -134,7 +134,7 @@ int loophsh(char **);
 void _eputs(char *);
 int _eputchar(char);
 int _putfd(char c, int fd);
-int _putsfd(char *str, int fd);
+int _putsfd(char *string, int fd);
 
 /* toem_string.c */
 int _strlen(char *);
