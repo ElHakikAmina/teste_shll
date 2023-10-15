@@ -24,7 +24,7 @@ int hsh(info_t *info, char **av)
 			set_info(info, av);
 			builtin_ret = find_builtin(info);
 			if (builtin_ret == -1)
-				find_cmd(info);
+				find_comandd(info);
 		}
 		else if (interactive(info))
 			_putchar('\n');
@@ -78,12 +78,12 @@ int find_builtin(info_t *info)
 }
 
 /**
- * find_cmd - finds a command in PATH
+ * find_comandd - finds a command in PATH
  * @info: the parameter & return info struct
  *
  * Return: void
  */
-void find_cmd(info_t *info)
+void find_comandd(info_t *info)
 {
 	char *path = NULL;
 	int i, k;
