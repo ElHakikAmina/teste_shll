@@ -16,7 +16,7 @@ int is_chain(info_t *info, char *buf, size_t *p)
 	{
 		buf[j] = 0;
 		j++;
-		info->cmd_buf_type = CMD_OR;
+		info->cmd_buf_type = CMD_OR_CHAINING;
 	}
 	else if (buf[j] == '&' && buf[j + 1] == '&')
 	{
@@ -57,7 +57,7 @@ void check_chain(info_t *info, char *buf, size_t *p, size_t i, size_t len)
 			j = len;
 		}
 	}
-	if (info->cmd_buf_type == CMD_OR)
+	if (info->cmd_buf_type == CMD_OR_CHAINING)
 	{
 		if (!info->status)
 		{

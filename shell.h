@@ -21,7 +21,7 @@
 /* for command chaining */
 /* change CMD_NORM to CMD_NORM_CHAINING */
 #define CMD_NORM_CHAINING	0
-#define CMD_OR		1
+#define CMD_OR_CHAINING		1
 #define CMD_AND		2
 #define CMD_CHAIN	3
 
