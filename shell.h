@@ -128,8 +128,8 @@ int is_comand(info_t *, char *);
 char *duplicate_chars(char *, int, int);
 char *finding_path(info_t *, char *, char *);
 
-/* loophsh.c */
-int loophsh(char **);
+/* loophshfunction.c */
+int loophshfunction(char **);
 
 /* toem_errors.c */
 void _eputs(char *);
