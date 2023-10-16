@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
-isInteractiveMode - Determines if the shell is in interactive mode
-@info: Pointer to a struct containing shell information
-Returns: 1 if the shell is in interactive mode, 0 otherwise
+* isInteractiveMode - Determines if the shell is in interactive mode
+* @info: Pointer to a struct containing shell information
+* Returns: 1 if the shell is in interactive mode, 0 otherwise
 */
 int intrctv(info_t_struct *info)
 {
