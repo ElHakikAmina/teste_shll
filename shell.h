@@ -226,7 +226,7 @@ void free_list(list_t **);
 
 /* toem_lists1.c */
 size_t list_len_fnc(const list_t *);
-char **list_to_strings_SHLL_fnc_SHLL_fnc(list_t *);
+char **list_to_strings_SHLL_fnc(list_t *);
 size_t print_list(const list_t *);
 list_t *nodestarts(list_t *, char *, char);
 ssize_t node_indexSHLL(list_t *, list_t *);
