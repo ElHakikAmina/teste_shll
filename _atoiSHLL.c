@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
-* intrctv - Determines if the shell is in interactive mode
+* @intrctv: Determines if the shell is in interactive mode
 * @info: Pointer to a struct containing shell information
 * Returns: 1 if the shell is in interactive mode, 0 otherwise
 */
