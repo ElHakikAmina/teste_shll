@@ -8,7 +8,7 @@
  */
 int _myenvfnc(info_t_struct *info)
 {
-	print_list_str(info->env);
+	print_list_fnc_str(info->env);
 	return (0);
 }
 
