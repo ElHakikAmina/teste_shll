@@ -232,7 +232,7 @@ list_t *nodestarts(list_t *, char *, char);
 ssize_t node_indexSHLL(list_t *, list_t *);
 
 /* toem_vars.c */
-int is_chain(info_t *, char *, size_t *);
+int is_chainSHLL(info_t *, char *, size_t *);
 void check_chain_fnc_shll(info_t *, char *, size_t *, size_t, size_t);
 int replace_alias_fnc_shll(info_t *);
 int replace_vars_fnc_shll(info_t *);

@@ -69,7 +69,7 @@ ssize_t get_input(info_t *info)
 		check_chain_fnc_shll(info, buf, &j, i, len);
 		while (j < len) /* iterate to semicolon or end */
 		{
-			if (is_chain(info, buf, &j))
+			if (is_chainSHLL(info, buf, &j))
 				break;
 			j++;
 		}
