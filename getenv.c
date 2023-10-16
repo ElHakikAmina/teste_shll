@@ -50,7 +50,7 @@ int _unsetenv(info_t_struct *info, char *var)
 }
 
 /**
- * _setenv - Initialize a new environment variable,
+ * _setenvfnc - Initialize a new environment variable,
  *             or modify an existing one
  * @info: Structure containing potential arguments. Used to maintain
  *        constant function prototype.
@@ -58,7 +58,7 @@ int _unsetenv(info_t_struct *info, char *var)
  * @value: the string env var value
  *  Return: Always 0
  */
-int _setenv(info_t_struct *info, char *var, char *value)
+int _setenvfnc(info_t_struct *info, char *var, char *value)
 {
 	char *buf = NULL;
 	list_t *node;

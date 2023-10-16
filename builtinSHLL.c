@@ -73,8 +73,8 @@ int _mycdfnc(info_t_struct *info)
 	}
 	else
 	{
-		_setenv(info, "OLDPWD", _getenvfnc(info, "PWD="));
-		_setenv(info, "PWD", getcwd(buffer, 1024));
+		_setenvfnc(info, "OLDPWD", _getenvfnc(info, "PWD="));
+		_setenvfnc(info, "PWD", getcwd(buffer, 1024));
 	}
 	return (0);
 }
