@@ -116,37 +116,37 @@ int replace_vars(info_t *info)
 
 		if (!_strcmpfnc(info->argv[i], "$?"))
 		{
-			replace_string(&(info->argv[i]),
+			replace_string_fnc_shll(&(info->argv[i]),
 				_strdupfnc(convert_number(info->status, 10, 0)));
 			continue;
 		}
 		if (!_strcmpfnc(info->argv[i], "$$"))
 		{
-			replace_string(&(info->argv[i]),
+			replace_string_fnc_shll(&(info->argv[i]),
 				_strdupfnc(convert_number(getpid(), 10, 0)));
 			continue;
 		}
 		node = nodestarts(info->env, &info->argv[i][1], '=');
 		if (node)
 		{
-			replace_string(&(info->argv[i]),
+			replace_string_fnc_shll(&(info->argv[i]),
 				_strdupfnc(_strchrfnc(node->string, '=') + 1));
 			continue;
 		}
-		replace_string(&info->argv[i], _strdupfnc(""));
+		replace_string_fnc_shll(&info->argv[i], _strdupfnc(""));
 
 	}
 	return (0);
 }
 
 /**
- * replace_string - replaces string
+ * replace_string_fnc_shll - replaces string
  * @old: address of old string
  * @new: new string
  *
  * Return: 1 if replaced, 0 otherwise
  */
-int replace_string(char **old, char *new)
+int replace_string_fnc_shll(char **old, char *new)
 {
 	free(*old);
 	*old = new;
