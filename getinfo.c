@@ -59,11 +59,11 @@ void free_info(info_t_struct *info, int all)
 		if (!info->cmd_buffer)
 			free(info->arg);
 		if (info->env)
-			free_list(&(info->env));
+			free_listfnc(&(info->env));
 		if (info->history)
-			free_list(&(info->history));
+			free_listfnc(&(info->history));
 		if (info->alias)
-			free_list(&(info->alias));
+			free_listfnc(&(info->alias));
 		filefree(info->environ);
 			info->environ = NULL;
 		bufferfree((void **)info->cmd_buffer);
