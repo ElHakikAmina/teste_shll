@@ -1,5 +1,5 @@
 #include "shell.h"
-
+/* CREATED BY Amina El Hakik, Mehdi Belaazri */
 /**
  * _myenvfnc - prints the current environment
  * @info: Structure containing potential arguments. Used to maintain

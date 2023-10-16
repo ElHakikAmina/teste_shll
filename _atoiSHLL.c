@@ -1,5 +1,5 @@
 #include "shell.h"
-
+/* CREATED BY Amina El Hakik, Mehdi Belaazri */
 /**
 * intrctv - Determines if the shell is in interactive mode
 * @info: Pointer to a struct containing shell information
