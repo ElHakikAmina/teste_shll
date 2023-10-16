@@ -56,12 +56,12 @@ char **list_to_strings_SHLL_fnc(list_t *head)
 
 
 /**
- * print_list_fnc - prints all elements of a list_t linked list
+ * print_list - prints all elements of a list_t linked list
  * @h: pointer to first node
  *
  * Return: size of list
  */
-size_t print_list_fnc(const list_t *h)
+size_t print_list(const list_t *h)
 {
 	size_t i = 0;
 

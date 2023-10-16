@@ -9,7 +9,7 @@
  */
 int _myhistoryfnc(info_t_struct *info)
 {
-	print_list_fnc(info->history);
+	print_list(info->history);
 	return (0);
 }
 
