@@ -11,7 +11,7 @@ int intrctv(info_t_struct *info)
 }
 
 /**
- * isDelimiter - Checks if a character is a delimiter
+ * delim - Checks if a character is a delimiter
  * @c: The character to check
  * @delim: The delimiter string
  * Returns: 1 if true, 0 if false
