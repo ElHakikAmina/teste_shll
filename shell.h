@@ -194,7 +194,7 @@ int _getlinefnc(info_t_struct *, char **, size_t *);
 void sigintHandler(int);
 
 /* toem_getinfo.c */
-void clear_info(info_t_struct *);
+void clear_info_fnc_shll(info_t_struct *);
 void set_info(info_t_struct *, char **);
 void free_info(info_t_struct *, int);
 

@@ -1,10 +1,10 @@
 #include "shell.h"
 /* CREATED BY Amina El Hakik, Mehdi Belaazri */
 /**
- * clear_info - initializes info_t_struct struct
+ * clear_info_fnc_shll - initializes info_t_struct struct
  * @info: struct address
  */
-void clear_info(info_t_struct *info)
+void clear_info_fnc_shll(info_t_struct *info)
 {
 	info->arg = NULL;
 	info->argv = NULL;

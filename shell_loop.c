@@ -14,7 +14,7 @@ int hsh(info_t_struct *info, char **av)
 
 	while (r != -1 && builtin_ret != -2)
 	{
-		clear_info(info);
+		clear_info_fnc_shll(info);
 		if (intrctv(info))
 			_putsfnc("$ ");
 		_eputcharfnc(BUFFER_FLSH);
