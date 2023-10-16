@@ -1,5 +1,5 @@
 #include "shell.h"
-
+/* CREATED BY Amina El Hakik, Mehdi Belaazri */
 /**
  * bufferfree - frees a pointer and NULLs the address
  * @ptr: address of the pointer to free

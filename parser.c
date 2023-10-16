@@ -1,5 +1,5 @@
 #include "shell.h"
-
+/* CREATED BY Amina El Hakik, Mehdi Belaazri */
 /**
  * is_comand - determines if a file is an executable command
  * @info: the info struct

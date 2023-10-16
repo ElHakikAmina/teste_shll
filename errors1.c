@@ -1,5 +1,5 @@
 #include "shell.h"
-
+/* CREATED BY Amina El Hakik, Mehdi Belaazri */
 /**
  * _erratoifnc - converts a string to an integer
  * @s: the string to be converted

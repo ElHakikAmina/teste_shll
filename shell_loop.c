@@ -1,5 +1,5 @@
 #include "shell.h"
-
+/* CREATED BY Amina El Hakik, Mehdi Belaazri */
 /**
  * hsh - main shell loop
  * @info: the parameter & return info struct

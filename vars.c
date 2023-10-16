@@ -1,5 +1,5 @@
 #include "shell.h"
-
+/* CREATED BY Amina El Hakik, Mehdi Belaazri */
 /**
  * is_chainSHLL - test if current char in buffer is a chain delimeter
  * @info: the parameter struct

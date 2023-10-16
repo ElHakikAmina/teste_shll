@@ -1,5 +1,5 @@
 #include "shell.h"
-
+/* CREATED BY Amina El Hakik, Mehdi Belaazri */
 /**
  **_strncpyfnc - copies a string
  *@dest: the destination string to be copied to

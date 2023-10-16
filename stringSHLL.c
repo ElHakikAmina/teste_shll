@@ -1,5 +1,5 @@
 #include "shell.h"
-
+/* CREATED BY Amina El Hakik, Mehdi Belaazri */
 /**
  * _strlenfnc - returns the length of a string
  * @s: the string whose length to check

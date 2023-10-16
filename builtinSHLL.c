@@ -1,5 +1,5 @@
 #include "shell.h"
-
+/* CREATED BY Amina El Hakik, Mehdi Belaazri */
 /**
  * _myexitfnc - exits the shell
  * @info: Structure containing potential arguments. Used to maintain

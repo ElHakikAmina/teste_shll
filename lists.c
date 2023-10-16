@@ -1,5 +1,5 @@
 #include "shell.h"
-
+/* CREATED BY Amina El Hakik, Mehdi Belaazri */
 /**
  * addingnode - adds a node to the start of the list
  * @head: address of pointer to head node
