@@ -8,7 +8,7 @@
  *
  * Return: 1 if chain delimeter, 0 otherwise
  */
-int is_chainSHLL(info_t *info, char *buf, size_t *p)
+int is_chainSHLL(info_t_struct *info, char *buf, size_t *p)
 {
 	size_t j = *p;
 
@@ -45,7 +45,7 @@ int is_chainSHLL(info_t *info, char *buf, size_t *p)
  *
  * Return: Void
  */
-void check_chain_fnc_shll(info_t *info, char *buf, size_t *p, size_t i, size_t len)
+void check_chain_fnc_shll(info_t_struct *info, char *buf, size_t *p, size_t i, size_t len)
 {
 	size_t j = *p;
 
@@ -75,7 +75,7 @@ void check_chain_fnc_shll(info_t *info, char *buf, size_t *p, size_t i, size_t l
  *
  * Return: 1 if replaced, 0 otherwise
  */
-int replace_alias_fnc_shll(info_t *info)
+int replace_alias_fnc_shll(info_t_struct *info)
 {
 	int i;
 	list_t *node;
@@ -104,7 +104,7 @@ int replace_alias_fnc_shll(info_t *info)
  *
  * Return: 1 if replaced, 0 otherwise
  */
-int replace_vars_fnc_shll(info_t *info)
+int replace_vars_fnc_shll(info_t_struct *info)
 {
 	int i = 0;
 	list_t *node;

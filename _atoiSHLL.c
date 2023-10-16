@@ -6,7 +6,7 @@
  *
  * Return: 1 if intrctv mode, 0 otherwise
  */
-int intrctv(info_t *info)
+int intrctv(info_t_struct *info)
 {
 	return (isatty(STDIN_FILENO) && info->readfd <= 2);
 }

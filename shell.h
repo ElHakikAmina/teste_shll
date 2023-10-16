@@ -99,7 +99,7 @@ typedef struct passinfo
 	int readfd;
 	/* hstrycount par hstrycount */
 	int hstrycount;
-} info_t;
+} info_t_struct;
 
 #define INFO_INIT \
 {NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, \
@@ -113,20 +113,20 @@ typedef struct passinfo
 typedef struct builtin
 {
 	char *type;
-	int (*func)(info_t *);
+	int (*func)(info_t_struct *);
 } builtin_table;
 
 
 /* toem_shloop.c */
-int hsh(info_t *, char **);
-int find_builtin(info_t *);
-void find_comandd(info_t *);
-void fork_comand(info_t *);
+int hsh(info_t_struct *, char **);
+int find_builtin(info_t_struct *);
+void find_comandd(info_t_struct *);
+void fork_comand(info_t_struct *);
 
 /* toem_parser.c */
-int is_comand(info_t *, char *);
+int is_comand(info_t_struct *, char *);
 char *duplicate_chars(char *, int, int);
-char *finding_path(info_t *, char *, char *);
+char *finding_path(info_t_struct *, char *, char *);
 
 /* loophshfunction.c */
 int loophshfunction(char **);
@@ -167,55 +167,55 @@ void *_reallocfnc(void *, unsigned int, unsigned int);
 int bufferfree(void **);
 
 /* toem_atoifnc.c */
-int intrctv(info_t *);
+int intrctv(info_t_struct *);
 int delim(char, char *);
 int _isalphafnc(int);
 int _atoifnc(char *);
 
 /* toem_errors1.c */
 int _erratoifnc(char *);
-void print_error(info_t *, char *);
+void print_error(info_t_struct *, char *);
 int print_d(int, int);
 char *convert_number(long int, int, int);
 void remove_comments(char *);
 
 /* toem_builtin.c */
-int _myexitfnc(info_t *);
-int _mycdfnc(info_t *);
-int _myhelpfnc(info_t *);
+int _myexitfnc(info_t_struct *);
+int _mycdfnc(info_t_struct *);
+int _myhelpfnc(info_t_struct *);
 
 /* toem_builtin1.c */
-int _myhistoryfnc(info_t *);
-int _myaliasfnc(info_t *);
+int _myhistoryfnc(info_t_struct *);
+int _myaliasfnc(info_t_struct *);
 
 /*toem_getlinefnc.c */
-ssize_t get_input(info_t *);
-int _getlinefnc(info_t *, char **, size_t *);
+ssize_t get_input(info_t_struct *);
+int _getlinefnc(info_t_struct *, char **, size_t *);
 void sigintHandler(int);
 
 /* toem_getinfo.c */
-void clear_info(info_t *);
-void set_info(info_t *, char **);
-void free_info(info_t *, int);
+void clear_info(info_t_struct *);
+void set_info(info_t_struct *, char **);
+void free_info(info_t_struct *, int);
 
 /* toem_environ.c */
-char *_getenvfnc(info_t *, const char *);
-int _myenvfnc(info_t *);
-int _mysetenvfnc(info_t *);
-int _myunsetenv(info_t *);
-int populate_env_list(info_t *);
+char *_getenvfnc(info_t_struct *, const char *);
+int _myenvfnc(info_t_struct *);
+int _mysetenvfnc(info_t_struct *);
+int _myunsetenv(info_t_struct *);
+int populate_env_list(info_t_struct *);
 
 /* toem_getenvfnc.c */
-char **get_environ(info_t *);
-int _unsetenv(info_t *, char *);
-int _setenv(info_t *, char *, char *);
+char **get_environ(info_t_struct *);
+int _unsetenv(info_t_struct *, char *);
+int _setenv(info_t_struct *, char *, char *);
 
 /* toem_history.c */
-char *get_hstry_f(info_t *info);
-int write_history(info_t *info);
-int read_history(info_t *info);
-int build_history_list(info_t *info, char *buf, int linecount);
-int renumber_history(info_t *info);
+char *get_hstry_f(info_t_struct *info);
+int write_history(info_t_struct *info);
+int read_history(info_t_struct *info);
+int build_history_list(info_t_struct *info, char *buf, int linecount);
+int renumber_history(info_t_struct *info);
 
 /* toem_lists.c */
 list_t *addingnode(list_t **, const char *, int);
@@ -232,10 +232,10 @@ list_t *nodestarts(list_t *, char *, char);
 ssize_t node_indexSHLL(list_t *, list_t *);
 
 /* toem_vars.c */
-int is_chainSHLL(info_t *, char *, size_t *);
-void check_chain_fnc_shll(info_t *, char *, size_t *, size_t, size_t);
-int replace_alias_fnc_shll(info_t *);
-int replace_vars_fnc_shll(info_t *);
+int is_chainSHLL(info_t_struct *, char *, size_t *);
+void check_chain_fnc_shll(info_t_struct *, char *, size_t *, size_t, size_t);
+int replace_alias_fnc_shll(info_t_struct *);
+int replace_vars_fnc_shll(info_t_struct *);
 int replace_string_fnc_shll(char **, char *);
 
 #endif

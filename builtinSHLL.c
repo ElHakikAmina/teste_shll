@@ -7,7 +7,7 @@
  *  Return: exits with a given exit status
  *         (0) if info.argv[0] != "exit"
  */
-int _myexitfnc(info_t *info)
+int _myexitfnc(info_t_struct *info)
 {
 	int exitcheck;
 
@@ -35,7 +35,7 @@ int _myexitfnc(info_t *info)
  *          constant function prototype.
  *  Return: Always 0
  */
-int _mycdfnc(info_t *info)
+int _mycdfnc(info_t_struct *info)
 {
 	char *s, *dir, buffer[1024];
 	int chdir_ret;
@@ -85,7 +85,7 @@ int _mycdfnc(info_t *info)
  *          constant function prototype.
  *  Return: Always 0
  */
-int _myhelpfnc(info_t *info)
+int _myhelpfnc(info_t_struct *info)
 {
 	char **arg_array;
 
