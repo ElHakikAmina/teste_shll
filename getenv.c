@@ -10,7 +10,7 @@ char **get_environ(info_t_struct *info)
 {
 	if (!info->environ || info->env_changed)
 	{
-		info->environ = list_to_strings(info->env);
+		info->environ = list_to_strings_SHLL_fnc(info->env);
 		info->env_changed = 0;
 	}
 
