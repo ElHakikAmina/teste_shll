@@ -11,11 +11,12 @@ int intrctv(info_t_struct *info)
 }
 
 /**
- * delim - checks if character is a delimeter
- * @c: the char to check
- * @delim: the delimeter string
- * Return: 1 if true, 0 if false
+ * isDelimiter - Checks if a character is a delimiter
+ * @c: The character to check
+ * @delim: The delimiter string
+ * Returns: 1 if true, 0 if false
  */
+
 int delim(char c, char *delim)
 {
 	while (*delim)
