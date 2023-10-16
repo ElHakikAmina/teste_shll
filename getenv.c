@@ -18,13 +18,13 @@ char **get_environ(info_t_struct *info)
 }
 
 /**
- * _unsetenv - Remove an environment variable
+ * _unsetenvfnc - Remove an environment variable
  * @info: Structure containing potential arguments. Used to maintain
  *        constant function prototype.
  *  Return: 1 on delete, 0 otherwise
  * @var: the string env var property
  */
-int _unsetenv(info_t_struct *info, char *var)
+int _unsetenvfnc(info_t_struct *info, char *var)
 {
 	list_t *node = info->env;
 	size_t i = 0;

@@ -207,7 +207,7 @@ int populate_env_list(info_t_struct *);
 
 /* toem_getenvfnc.c */
 char **get_environ(info_t_struct *);
-int _unsetenv(info_t_struct *, char *);
+int _unsetenvfnc(info_t_struct *, char *);
 int _setenvfnc(info_t_struct *, char *, char *);
 
 /* toem_history.c */
