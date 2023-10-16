@@ -234,7 +234,7 @@ ssize_t node_indexSHLL(list_t *, list_t *);
 /* toem_vars.c */
 int is_chain(info_t *, char *, size_t *);
 void check_chain(info_t *, char *, size_t *, size_t, size_t);
-int replace_alias(info_t *);
+int replace_alias_fnc_shll(info_t *);
 int replace_vars_fnc_shll(info_t *);
 int replace_string_fnc_shll(char **, char *);
 

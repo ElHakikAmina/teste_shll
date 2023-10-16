@@ -39,7 +39,7 @@ void set_info(info_t *info, char **av)
 			;
 		info->argc = i;
 
-		replace_alias(info);
+		replace_alias_fnc_shll(info);
 		replace_vars_fnc_shll(info);
 	}
 }
